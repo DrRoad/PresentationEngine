@@ -10,3 +10,6 @@ source("./genericFunctions.R", local = TRUE)
 
 # Data retrieval/ DB handler functions
 source("./DB/summerExpenditure.R", local = TRUE)
+
+# Summer Expenditure Group
+source("./summerExpenditure/summerExpenditure.R", local = TRUE)
