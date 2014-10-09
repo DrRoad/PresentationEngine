@@ -4,19 +4,19 @@
 require(rCharts)
 
 setGeneric(
-  "getTitle", function() {
+  "getTitle", function(object) {
     return("")  
   }
 )
 
 setGeneric(
-  "getData", function() {
+  "getData", function(object) {
     return(data.frame())
   }
 )
 
 setGeneric(
-  "generateNVD3Chart", function() {
+  "generateNVD3Chart", function(object) {
     chart <- rCharts$new()
     chart$templates$script <- ""
     return(chart)
@@ -24,7 +24,7 @@ setGeneric(
 )
 
 setGeneric(
-  "generateDataTable", function() {
+  "generateDataTable", function(object) {
     return(data.frame())
   }
 )
