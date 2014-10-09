@@ -1,3 +1,5 @@
+# Panel definition for introduction tab/page/group
+
 require(shiny)
 
 getIntroPanel <- function(){
