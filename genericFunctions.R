@@ -16,6 +16,12 @@ setGeneric(
 )
 
 setGeneric(
+  "getCaption", function(object) {
+    return("")
+  }  
+)
+
+setGeneric(
   "generateNVD3Chart", function(object) {
     chart <- rCharts$new()
     chart$templates$script <- ""

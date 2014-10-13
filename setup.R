@@ -1,7 +1,7 @@
 # Presentation Engine - Setup file
 
 require(shiny)
-
+require(reshape)
 
 # --- Include other files required for presentation engine ---
 
