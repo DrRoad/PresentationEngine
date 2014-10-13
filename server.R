@@ -6,6 +6,6 @@ source("./setup.R", local = TRUE)
 
 shinyServer(function(input, output) {
     
-    
+  item <- reactive({input$group})
     
 })

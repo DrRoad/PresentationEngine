@@ -16,5 +16,5 @@ getSummerExpenditurePrototype <- function(){
 setClass(
   "summerExpenditure",
   slots = c(startDate = "Date", endDate = "Date", option = "character"),
-  protoype = getSummerExpenditurePrototype()
+  prototype = getSummerExpenditurePrototype()
 )
