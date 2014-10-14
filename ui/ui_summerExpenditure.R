@@ -30,6 +30,7 @@ getSummerExpenditurePanel <- function() {
       
       # Main visualisation area
       mainPanel(
+        width = 11,
         conditionalPanel(
           condition = "input.group == 'summerExpenditure' &&
                        (input.summerExpenditure == 'byCategory' ||
@@ -42,8 +43,9 @@ getSummerExpenditurePanel <- function() {
             min = as.Date("2014-06-30"),
             max = as.Date("2014-09-20")
           )
-        )
+        ),
         
+        showOutput("summerExpenditureNVD3Chart", "nvd3")
       )
     )
     

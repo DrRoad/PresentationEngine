@@ -13,3 +13,4 @@ source("./DB/DB_summerExpenditure.R", local = TRUE)
 
 # Summer Expenditure Group
 source("./summerExpenditure/summerExpenditure.R", local = TRUE)
+source("./summerExpenditure/summerExpenditure_byCategory.R", local = TRUE)

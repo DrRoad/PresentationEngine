@@ -17,8 +17,12 @@ setMethod(
   "getData", "summerExpenditure_byCategory",
   function(object){
     data <- getSummerExpenditureData(object@startDate, object@endDate)
+    
+    # Excluding large purchases
+    data <- data[!data$Type %in% c("Long-distance Travel", "Insurance"), ]
+    
     aggregate <- 
-      melt(data.frame(cast(data, Type ~ .,
+      melt(data.frame(cast(data, Type ~ ., 
                            value = "Amount", fun.aggregate = sum)),
            id.vars = "Type")  
     
