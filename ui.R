@@ -1,6 +1,7 @@
 # Presentaiton Engine - User interface definition
 
 require(shiny)
+require(rCharts)
 
 # Include UI definition for different presentation groups
 source("./ui/ui_intro.R", local = TRUE)

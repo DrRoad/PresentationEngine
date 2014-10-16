@@ -2,8 +2,7 @@
 # Summer Expenditure presentation group - Parent class declaration
 
 getSummerExpenditurePrototype <- function(){
-  # Dates chosen as they covered the last week of available data
-  defaultStartDate <- as.Date("2014-09-14")
+  defaultStartDate <- as.Date("2014-06-30")
   defaultEndDate <- as.Date("2014-09-20")
   
   # Empty string as default option
